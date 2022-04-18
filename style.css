@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: none;
+}
+
+
+nav{
+	display: flex;
+	justify-content: space-between;
+}
+.navigation{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+	margin: 30px;
+}
+a:hover{
+	color: #0065fc;
+	border-top: #0065fc 3px solid;
+}
+
+header{
+	margin: 30px 0px;
+}
+header h1{
+	margin-bottom: 10px;
+}
+h3{
+	font-weight: 200;
+}
+
+.search{
+	display: flex;
+	border: #f2f2f2 3px solid;
+	border-radius: 20px;
+	width: fit-content;
+}
+.search i{
+	background-color: #f2f2f2;
+	padding: 20px;
+	border-radius: 17px 0px 0px 17px;
+}
+.search button{
+	font-weight: 400;
+	border: none;
+	background-color: #0065fc;
+	color: #f2f2f2;
+	padding: 20px;
+	border-radius: 0px 17px 17px 0px;
+}
+.search .searchBar input[type=text]{
+	padding: 20px;
+	border: none;
+}
+
+.filters{
+	margin: 30px 0px;
+	display: flex;
+}
+.filtersContent{
+	display: flex;
+	flex-wrap: wrap;
+}
+.filterHeader{
+	margin-right: 30px;
+	padding: 10px;
+}
+
+.filter{
+	margin: 0px 30px;
+	display: flex;
+	border: #f2f2f2 3px solid;
+	border-radius: 15px;
+}
+.filter > *{
+	padding: 10px;
+}
+.filter i{
+	background-color: #deebff;
+	color: #0065fc;
+	border-radius: 12px;
+}
+
+.info{
+	display: flex;
+	align-items: center;
+}
+.info i{
+	color: #0065fc;
+  	border-radius: 50%;
+  	border: 3px solid #f2f2f2;
+  	padding: 8px;
+}
+.info p{
+	margin-left: 10px;
+	font-weight: 200;
+}
+
+.flex-container{
+	display: flex;
+	margin: 30px 0px;
+}
+.accommodationWindow{
+	background-color: #f2f2f2;
+	flex: 10;
+	padding: 15px;
+}
+.accommodationWindow .accommodations{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.accommodationWindow h1{
+	flex-grow: 3;
+	margin: 20px 10px 0 10px;
+	padding: 20px;
+}
+.accommodationWindow .accommodations .accommodation{
+	width: fit-content;
+	height: fit-content;
+	background-color: #fff;
+	margin: 15px;
+	display: flex;
+	flex-direction: column;
+	border: #fff 10px solid;
+	border-radius: 20px;
+}
+.accommodations .accommodation img{
+	width: 200px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 20px 20px 0 0;
+}
+.accommodations .accommodation h3{
+	font-size: 16px;
+	font-weight: 600;
+	margin: 3px;
+	margin-top: 7px
+}
+.accommodations .accommodation p{
+	margin: 3px;
+}
+.accommodations .accommodation p span{
+	font-weight: 600;
+}
+.accommodations .accommodation .stars{
+	width: 12px;
+	height: auto;
+	color: #0065fc;
+	display: flex;
+	margin: 3px;
+}
+.accommodations .accommodation .stars .zeroStar{
+	color: #d1d1d1;
+	display: flex;
+}
+.accommodationWindow .showMore{
+	flex-grow: 3;
+	margin: 0px 10px;
+	font-weight: 400;
+	border: none;
+	background-color: #f2f2f2;
+	padding: 20px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.mostPopular{
+	margin-left: 20px;
+	background-color: #f2f2f2;
+	flex: 5;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.mostPopularHeader{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	margin: 20px 10px 0 10px;
+}
+.mostPopular .accommodations{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mostPopular .accommodation{
+	width: 350px;
+	height: fit-content;
+	display: flex;
+	background-color: #fff;
+	margin: 15px 0px;
+	border: #fff 10px solid;
+	border-radius: 20px 20px 20px 20px;
+}
+.mostPopular .accommodation img{
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 20px 0px 0 20px;
+}
+.mostPopular .accommodationContent{
+	padding-left: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.activitiesHeader{
+	margin-top: 50px;
+}
+.flex-container2{
+	display: flex;
+	margin: 30px 0px;
+	gap: 30px;
+}
+.activity{
+	flex: 1;
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.activities{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.flex-container2 img{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 20px 20px 0px 0px;
+}
+.activities img{
+	height: 160px;
+}
+.flex-container2 h3{
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px;
+	padding-left: 30px;
+}
